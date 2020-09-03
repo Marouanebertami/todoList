@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
 
 class Form extends Component {
+
+    inputTextHandler = (e) => {
+        console.log(e);
+    }
+
     render() {
         return (
             <div>
                 <form>
-                    <input type="text"/>
+                    <input onChange={this.inputTextHandler} type="text"/>
+                    <button>Ajouter</button>
                 </form>
             </div>
         )
